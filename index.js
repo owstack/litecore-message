@@ -1,4 +1,6 @@
-var litecore = require('litecore-lib');
-litecore.Message = require('./lib/message');
+'use strict';
 
-module.exports = litecore.Message;
+var ltcLib = require('@owstack/ltc-lib');
+ltcLib.Message = require('./lib/message');
+
+module.exports = ltcLib.Message;

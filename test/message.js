@@ -4,16 +4,16 @@ var chai = require('chai');
 var expect = chai.expect;
 var should = chai.should();
 
-var bitcore = require('litecore-lib');
-var Address = bitcore.Address;
-var Signature = bitcore.crypto.Signature;
+var ltcLib = require('@owstack/ltc-lib');
+var Address = ltcLib.Address;
+var Signature = ltcLib.crypto.Signature;
 var Message = require('../');
 
 describe('Message', function() {
 
   var address = 'n1ZCYg9YXtB5XCZazLxSmPDa8iwJRZHhGx';
   var badAddress = 'mmRcrB5fTwgxaFJmVLNtaG8SV454y1E3kC';
-  var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
+  var privateKey = ltcLib.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
   var text = 'hello, world';
   var signatureString = 'H9XORZInM3B3a8BNS65kwgmbnqEuq73rjAQ5VKyVzTrzPOdHdHOY2lfoph5auvMgLSr7bh+nEQSG/f2kv9TnsbY=';
 
@@ -101,7 +101,7 @@ describe('Message', function() {
   });
 
   it('will verify with an uncompressed pubkey', function() {
-    var privateKey = new bitcore.PrivateKey('6vrJ6bnKwaSuimkkRLpNNziSjqwZCG59kfFC9P2kjbUUs5Y6Cw9');
+    var privateKey = new ltcLib.PrivateKey('6vrJ6bnKwaSuimkkRLpNNziSjqwZCG59kfFC9P2kjbUUs5Y6Cw9');
     var message = new Message('This is an example of a signed message.');
     var signature = message.sign(privateKey);
     var verified = message.verify(privateKey.toAddress(), signature);
