@@ -1,7 +1,7 @@
 ltc Message
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/ltc-message.svg?style=flat-square)](https://www.npmjs.org/package/ltc-message)
+[![NPM Package](https://img.shields.io/npm/v/@owstack/ltc-message.svg?style=flat-square)](https://www.npmjs.org/package/@owstack/ltc-message)
 [![Build Status](https://img.shields.io/travis/owstack/ltc-message.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/ltc-message)
 [![Coverage Status](https://img.shields.io/coveralls/owstack/ltc-message.svg?style=flat-square)](https://coveralls.io/r/owstack/ltc-message?branch=master)
 
@@ -40,4 +40,3 @@ See [CONTRIBUTING.md](https://github.com/owstack/ltc/blob/master/CONTRIBUTING.md
 Code released under [the MIT license](https://github.com/owstack/ltc/blob/master/LICENSE).
 
 Copyright 2017 Open Wallet Stack.
-
