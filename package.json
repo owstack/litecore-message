@@ -1,6 +1,6 @@
 {
   "name": "@owstack/ltc-message",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Litecoin message verification and signing.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/owstack/ltc-message.git"
   },
   "dependencies": {
-    "@owstack/ltc-lib": "^0.0.4"
+    "@owstack/ltc-lib": "^0.0.5"
   },
   "devDependencies": {
     "@owstack/ows-build": "^0.0.3",
